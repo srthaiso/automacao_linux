@@ -38,18 +38,18 @@ Este projeto foi desenvolvido como parte do **Desafio do Bootcamp Santander - Li
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repo.git
-   cd nome-do-repo
+   git clone https://github.com/srthaiso/automacao_linux.git
+   cd automacao_linux
    ```
 
 2. Dê permissão de execução ao script:
    ```bash
-   chmod +x estrutura.sh
+   chmod +x iac1.sh
    ```
 
 3. Execute o script como **root** ou com **sudo**:
    ```bash
-   sudo ./estrutura.sh
+   sudo ./iac1.sh
    ```
 
 > ⚠️ **Importante**: Execute o script em um ambiente de testes para garantir que atende às necessidades antes de usar em produção.
