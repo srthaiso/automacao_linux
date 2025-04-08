@@ -1,7 +1,3 @@
-Perfeito, agora com base no seu script, aqui está o `README.md` atualizado e totalmente alinhado com o que você implementou:
-
----
-
 # IaC - Criação de Estrutura de Usuários, Diretórios e Permissões
 
 ## 📄 Descrição
