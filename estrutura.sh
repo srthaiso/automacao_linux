@@ -1,0 +1,70 @@
+#!/bin/bash
+
+echo "Passo 1..."
+echo "..."
+echo "..."
+echo "Criando diretórios..."
+
+mkdir /publico
+mkdir /adm
+mkdir /ven
+mkdir /sec
+
+echo "Finalizada criação de diretórios..."
+echo "Passo 2..."
+echo "..."
+echo "..."
+echo "Criando grupos..."
+
+groupadd GRP_ADM
+groupadd GRP_VEN
+groupadd GRP_SEC
+
+echo "Finalizada criação de grupos..."
+echo "Passo 3..."
+echo "..."
+echo "..."
+echo "Criando usuário..."
+
+useradd carlos -c "Carlos" -m -s /bin/bash -p $(openssl -crypt "@Mudar123") -G GRP_ADM
+passwd -e carlos
+
+useradd maria -c "Maria" -m -s /bin/bash -p $(openssl -crypt "@Mudar123") -G GRP_ADM
+passwd -e maria
+
+useradd joao -c "João" -m -s /bin/bash -p $(openssl -crypt "@Mudar123") -G GRP_ADM
+passwd -e joao
+
+useradd debora -c "Debora" -m -s /bin/bash -p $(openssl -crypt "@Mudar123") -G GRP_VEN
+passwd -e @Mudar123
+
+useradd sebastiana -c "Sebastiana" -m -s /bin/bash -p $(openssl -crypt "@Mudar123") -G GRP_VEN
+passwd -e sebastiana
+
+useradd roberto -c "Sebatiana" -m -s /bin/bash -p $(openssl -crypt "@Mudar123") -G GRP_VEN
+passwd -e roberto
+
+useradd josefina -c "Josefina" -m -s /bin/bash -p $(openssl -crypt "@Mudar123") -G GRP_SEC
+passwd -e josefina
+
+useradd amanda -c "Amanda" -m -s /bin/bash -p $(openssl -crypt "@Mudar123") -G GRP_SEC
+passwd -e amanda
+
+useradd rogerio -c "Rogerio" -m -s /bin/bash -p $(openssl -crypt "@Mudar123") -G GRP_SEC
+passwd -e rogerio
+
+echo "Finalizada criação de usuário..."
+echo "..."
+echo "..."
+echo "Especificando permissões dos diretórios..."
+
+chown root:GRP_ADM /adm
+chown root:GRP_VEN /ven
+chown root:GRP_sec /sec
+
+chmod 770 /adm
+chmod 770 /ven
+chmod 770 /sec
+chmod 777 /publico
+
+echo "Fim da programação"
