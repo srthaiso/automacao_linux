@@ -59,7 +59,3 @@ Este projeto foi desenvolvido como parte do **Desafio do Bootcamp Santander - Li
 - **Ismael Nascimento**  
 - Bootcamp Santander - Linux para Iniciantes  
 - [Linkedin](https://www.linkedin.com/in/inascimento/)
-
----
-
-Se quiser, posso também corrigir pequenos detalhes no seu script (como o nome do grupo que está escrito `GRP_sec` com "s" minúsculo) ou gerar um README já em formato `.md` prontinho pra subir no GitHub. Só avisar!
