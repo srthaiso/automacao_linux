@@ -62,7 +62,7 @@ Este projeto foi desenvolvido como parte do **Desafio do Bootcamp Santander - Li
 
 - **Ismael Nascimento**  
 - Bootcamp Santander - Linux para Iniciantes  
-- [[Linkedin](https://www.linkedin.com/in/inascimento/)]
+- [Linkedin](https://www.linkedin.com/in/inascimento/)
 
 ---
 
